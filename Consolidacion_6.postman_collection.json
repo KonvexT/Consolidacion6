@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "02ef8651-84e3-4c44-8fdc-70eadd72f462",
+		"name": "Consolidacion_6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39610565"
+	},
+	"item": [
+		{
+			"name": "Listar Animes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/animes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Anime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"One Piece\",\r\n    \"genero\": \"Shonen\",\r\n    \"anio\": \"1999\",\r\n    \"autor\": \"Eiichiro Oda\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/animes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualzar Anime",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6\",\r\n    \"nombre\": \"One Ball\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/animes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Anime",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/animes?id=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"animes"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
